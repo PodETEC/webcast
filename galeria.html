@@ -7,6 +7,50 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" type="image/png" href="img/Logo.png">
         <link rel="stylesheet" href="css/estilo.css">
+        <style>/* Estilos gerais */
+            .main {
+                text-align: center;
+                margin: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+                margin-bottom: 20px;
+            }
+            
+            /* Estilo da galeria */
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adapta para diferentes larguras */
+                gap: 16px;
+                padding: 10px;
+            }
+            
+            .gallery-item {
+                width: 100%;
+                height: auto;
+                object-fit: cover; /* Garante que a imagem se ajuste sem distorcer */
+                border-radius: 8px; /* Bordas arredondadas para um visual mais agradável */
+                transition: transform 0.3s ease-in-out;
+            }
+            
+            .gallery-item:hover {
+                transform: scale(1.05); /* Efeito de zoom quando a imagem é sobrevoada */
+            }
+            
+            /* Ajustes de responsividade para dispositivos menores */
+            @media (max-width: 768px) {
+                .gallery {
+                    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Colunas menores em telas pequenas */
+                }
+            }
+            
+            @media (max-width: 480px) {
+                h1 {
+                    font-size: 1.5em;
+                }
+            }
+            </style>
 
         <title>POD ETEC</title>
     </head>
