@@ -78,6 +78,11 @@ p{
     }
 }
 
+a.sem-linha {
+    text-decoration: none;
+}
+
+
 /*tela de notebook*/
 @media screen and (max-width: 1600px) and (min-width: 426px){
     header{

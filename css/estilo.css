@@ -127,6 +127,11 @@ h3{
     color: white;
 }
 
+a.sem-linha {
+    text-decoration: none;
+}
+
+
 /*tela de pc*/
 @media screen and (min-width: 1601px) {
     .epsWrap, .text{
